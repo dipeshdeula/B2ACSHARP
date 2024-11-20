@@ -9,8 +9,8 @@ namespace fullStackOops.Lamda_Expression
     internal class LamdaExpression
     {
         //Note: lambda expression introuduced in c# 3.0
-        static void Main(string[] args)
-        {
+        /*static void Main(string[] args)
+        {*/
             //Expression lamda
 
             /* var numbers = new int[] { 2, 3, 4, 5, 6, 7, 8 };
@@ -73,7 +73,7 @@ namespace fullStackOops.Lamda_Expression
              Console.WriteLine(u(5));*/
 
             //Action delegate using lambda expression : 
-            Action<int> print = x => Console.WriteLine(x);
+          /*  Action<int> print = x => Console.WriteLine(x);
             print(10);
             Action<string>Details = x => Console.WriteLine("Name: " + x);
             Details("Dipesh");
@@ -83,7 +83,7 @@ namespace fullStackOops.Lamda_Expression
             Console.WriteLine(isEven(5));
 
             Predicate<string> isUpper = x => x.Equals(x.ToUpper());
-            Console.WriteLine(isUpper("aA"));
+            Console.WriteLine(isUpper("aA"));*/
 
             /*
              1. The Func delegate takes zero, one or more input parameters, and returns a value(with its out parameter).
@@ -98,7 +98,7 @@ namespace fullStackOops.Lamda_Expression
             */
 
 
-        }
+       /* }*/
 
 
     }

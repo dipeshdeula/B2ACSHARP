@@ -1,0 +1,11 @@
+﻿#LINQ (Language Integrated Query)
+
+- It is uniform query syntax in C# to retrieve data from different sources and formats.
+- It is integrated in C# or VB, thereby eliminating the mismatch between programming languages and databases,
+as well as providing a single querying interface for different types of data sources.
+- For example, SQL is a structured query language used to save and retrieve data from a database.
+- In the same way, LINQ is structured query syntax built in c# to retrieve data from types of data sources such as 
+collections, ADO.Net DataSet, XML Docs, web service and MS SQL Server.
+- It returns results as objects.
+- It enables you to uses object-oriented approach on the result set and not to worry about transforming different formats
+of results into objects.
