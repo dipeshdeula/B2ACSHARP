@@ -1,0 +1,45 @@
+﻿Lamda Expression
+
+- C# Lamda Expression is a short block of code that accepts parameters and returns a value.
+- It is defined as an anonymous function (function without a name).
+- Lamda expression in C# are used like anonymous function.
+- With difference that in lamda expressions you don't need to specify the type of the value that you input thus making it more flexible to use.
+- The '=>' is the lamda operator which is used in all lamda expressions.
+- The Lamda expression is divided into two points,
+	- The left side is the input and the right is the expression.
+- We can define lamda expression in C# as,
+	(parameterList) => lamda body
+
+Here,
+-ParameterList -> List of input parameters
+- '=>' ->A lamda operator
+- Lamda body -> can be an expression or statement
+
+Types of lamda expression
+
+The lamda expression can be of two types:
+1) Expression lamda : consists of the input and the expressions system:
+	input => expression;
+
+2) Statement lamda : consists of the input and a set of statements to be executed.
+
+namespace lambdaExpression
+{
+	internal class Program
+	{
+		static void Main(string[] args)
+		{
+			//Expression lamda
+			var numbers = new int[]{2,3,4,5,6,8,1,3,5,7};
+			var count = numbers.count(x=>x==5);
+			Console.WriteLine(Count);
+
+			//Statement lamda
+			List<int> numbers2 = new List<int>{2,4,6,8,10};
+			count = numbers2.count(x=>{return x==5;});
+			Console.WriteLine(count);
+		}
+	}
+}
+
+updated

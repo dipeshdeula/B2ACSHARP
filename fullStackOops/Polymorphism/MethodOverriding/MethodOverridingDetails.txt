@@ -1,0 +1,6 @@
+﻿Method Overriding
+
+- In the method overriding, Derived class defines same method as defined in its base class.
+- It is used to achieve runtime polymorphism.
+- Enables you to provide implementation of method which is already provided by its base class.
+- You need to use virtual keyword in base class method and override keyword in derived class method.

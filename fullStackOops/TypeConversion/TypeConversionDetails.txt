@@ -1,0 +1,61 @@
+﻿Type Conversion
+
+Type conversion in C# is the process of converting a variable
+from one data type to another data type. It's essential for ensuring that
+data can be manipulated appropriately in different contexts.
+
+There are two types of type conversion in C#:
+1) Implicit type conversion
+2) Explicit type conversion (also known as casting)
+
+Implicit type conversion are performed automatically by the compiler when
+there is no risk of data loss during the conversion.
+For example,
+int num = 123;
+double doubleNum = num; // implicit type conversion from int to double
+
+Explict type conversion require a cast because there is a potential for 
+data loss during the conversion
+For example
+double doubleValue = 123.45;
+int intValue = (int)doubleValue; // explicit type conversion from double to int
+
+
+Other type conversion in C#:
+
+Conversion using the Convert class
+
+The Convert class provides methods to convert between different types safely.
+For example,
+string stringValue = "123";
+int intValue = Convert.ToInt32(stringValue); // convert string to int
+
+
+Overview of Boxing and Unboxing:
+
+Boxing and unboxing are special types of conversion in C# Boxing involves converting
+a value type to a reference type (object), while unboxing converts the reference type (object) back to a value type.
+
+
+What is Boxing?
+-> Boxing is the process of converting a value type (e.g, int,bool) to an object type.
+Example:
+int num = 123;
+object obj = num; // boxing : converting int to object
+
+
+What is Unboxing?
+-> Unboxing is the process of converting an object type back to a value type.
+It requires explicit casting.
+
+Example;
+object obj = 123; // Boxing : 123 is a value type boxed to an object
+int num = (int)obj; // Unboxing : converting object back to int
+
+Summary:
+key Takeaways:
+	Implicit vs Explicit Conversion : Implicit conversions are safe and automatic, while
+	explicit conversions (casting) require careful handling to avoid data loss.
+
+	Boxing/Unboxing: Boxing wraps a value type in an object, storing it on the heap, while unboxing 
+	extracts the value type from the object with a cast.

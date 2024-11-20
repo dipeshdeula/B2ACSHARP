@@ -1,0 +1,45 @@
+﻿Indexer
+
+-An indexer allows an object to be indexed such as an array
+-When you define an indexer for a class, this class behaves similar to a virtual array.
+-You can then access the instance of this class using the array access operators([]).
+-An indexer are a similar to a properties, but are accessed via an index aruguement rather than a property name.
+-A one dimensional indexer has the following syntax:
+	element_type this[int index]
+	{
+		//The get accessor
+		get
+		{
+			//return the value specified by index
+		}
+
+		//The set accessor
+		set
+		{
+			//set the value specified by index
+		}
+	}
+
+
+Indexer Vs Properties
+
+-----------------------------------|-----------------------------------------|
+			Indexer                |			Properties				     |
+-----------------------------------------------------------------------------
+1)Indexers are created with this   |1)Properties don't require this keyword. |
+keyword.                           |										 |
+------------------------------------------------------------------------------
+2)Indexer are identified by signature | 2) Properties are identified by their name
+-----------------------------------------------------------------------------------
+3)Indexer are accessed using indexer  | 3) Properties are accessed by their names
+-----------------------------------------------------------------------------------
+4)Indexer are instance member, so can't | 4) Properties can be static as well as
+be static                               |instance members
+-----------------------------------------------------------------------------------
+5)A get accessor has the same formal parameter | 5) A get accessor of a property has no
+list as teh indexer                            | no parameter
+-----------------------------------------------------------------------------------
+6) A set accessor has the same formal parameter | 6) A set accessor of a property contains
+list as the indexer, in additon to the value    | implicit value parameter
+parameter
+--------------------------------------------------------------------------------------------

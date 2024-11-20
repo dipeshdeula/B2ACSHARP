@@ -1,0 +1,41 @@
+﻿Partial Class
+
+-Partial Class is a unique feature of C#.
+-You can split the implementation of a class, a struct, a method, or an interface in multiple .cs file.
+-The compiler will combine all the implementation from multiple .cs files when the program is compiled.
+-The partial keyword is used to build a partial class.
+
+syntax:
+public partial class_name
+{
+	//code
+}
+
+#Advantages of Partial Class
+
+- Multiple developers can work simultaneously in the same class in differnet files.
+-You can split the UI of design code to read and understand the code.
+-When you were working with automatically generated code.
+-the code can be added to class without having to recreate the source file like in visual studio.
+-You can also maintain your application in an efficient manner by compressing large classes into small ones.
+
+
+Partial Methods
+
+-A Partial class may contain a partial method.
+-One part of the class contains the signature of the method.
+-An optional implementation may be defined in the same part or another part.
+-If the implementation is not supplied, then method and all calls are removed at compile time.
+-Both declaration and implementation of a method must have the partial keyword.
+
+syntax:
+
+Partial void method_name
+{
+	//code
+}
+
+Partial classes and methods provide a flexible and modular approach to organizing code in C#. 
+They enhance readability, maintainability, and collaboration, especially in large projects and
+when working with auto-generated code. By separating concerns and encapsulating optional logic,
+partial classes and methods help create cleaner and more manageable codebases.

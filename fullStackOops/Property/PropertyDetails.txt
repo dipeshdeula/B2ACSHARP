@@ -1,0 +1,28 @@
+﻿Property
+-Property is a class member that exposes the class private fields
+-Internally, C# properties are special methods called accessors
+-It has two accessors, a get property accessor or a getter and a set property accessor or a setter
+-A get accessor returns a property value and a set accessor assigns a new value
+-The value keyword represents the value of a property
+-Properties are used to access and modify private fields
+
+The general form of declaring a property is a follows:
+{
+	get{}
+	set{}
+}
+
+#usage of properties
+-C# provides can be read-only or write-only properties
+-Read-only properties have only a get accessor
+-Write-only properties have only a set accessor
+-We can have logic while setting values in the c# properties.
+-We make fields of class private, so that fields can't be accessed from outside the class directly.
+
+-Now we are forced to use C# Properties for setting or getting values.
+
+Types of properties
+1) Read-Write -> Acessors: get;set;
+2) Read-Only -> Acessors: get;
+3) Write-Only -> Acessors: set;
+4) Auto-Implemented -> Acessors: get; set;

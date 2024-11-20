@@ -1,0 +1,19 @@
+﻿ mPolymorphism
+
+- Polymorphism is a Greek word that means multiple forms or shapes.
+- It allows objects of different classes to be treated as objects of a common superclass.
+- In essence, it enables a single interface to be used for a general class of actions, with the specific action being
+determined by the exact nature of the object that is being acted upon.
+- You can use polymorphism if you want to have multiple form of one or more methods of a class with the same name.
+- Polymorphism is a feature of OOP that allows you to define a method in a subclass with the same name as a method in its superclass.
+- In C#, Polymorphism can be achieved in two ways:
+	-Compile Time Polymorphism / Early Binding / Static Binding : Achieved through Method Overloading and  Operator Overloading
+	-Run Time Polymorphism / Late Binding / Dynamic Binding : Achieved throug Method Overriding / Virtual Method
+
+When one task is performed in different ways, it is known as polymorphism. 
+For example: to convince the customer differently,
+to draw something, for example, shape, triangle, rectangle, etc.
+
+Compile-time polymorphism:
+	- In this, the compiler identifies which method is being called at the compile time itself.
+	- In C#, compile-time polymorphism is achieved through method overloading and operator overloading.

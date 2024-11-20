@@ -1,0 +1,11 @@
+﻿Synchronous Programmin (ex: Communication in telephone)
+
+- It is a type of programming in which code execution occurs in a single, sequential order.
+- when a synchronous method is called,
+ - program waits for method to complete before moving to next line of code.
+
+-This means that the program will block , or pause , until the method completes
+
+- Synchronous programming is easier to understand and implement, 
+but it can be less efficient than asynchronous programming, especially 
+in a multi-threaded environment.

@@ -1,0 +1,6 @@
+﻿Destructor
+- A destructor is a special method that is used to destroy an object of a class.
+- It is similar to a method that is invoked when an object of the class is destroyed.
+- However, unlike methods, a destructor :
+	-has the same name as the class preceded by a tilde (~)
+	-does not have parameters or return type

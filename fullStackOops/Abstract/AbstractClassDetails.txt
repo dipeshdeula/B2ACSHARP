@@ -1,0 +1,23 @@
+﻿Abstract Class
+
+- An abstract class is a class that cannot be instantiated.
+- Instead , it serves as a base class for other classes to inherit from.
+- They are used to define a common set of properties that derived classes must implement.
+- Abstract classes can have abstract methods, which are methods that are declared but not implemented.
+- Abstract methods must be implemented by any class that inherits from the abstract class.
+- Abstract classes can also have non-abstract methods, which are methods that are implemented in the abstract class and can be used by derived classes.
+- Abstract classes are defined using the abstract keyword.
+
+//Create an abstract class 
+abstract class Test
+{
+	//fields and methods
+}
+
+//try to create an object language
+//throws an error
+
+Test obj = new Test();
+
+- An abstract class can have abstract methods (method without body),
+non-abstract methods(method with the body), and fields.

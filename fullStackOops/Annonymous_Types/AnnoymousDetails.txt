@@ -1,0 +1,18 @@
+﻿Annonymous Types
+
+-It is introduced in C# 3.0
+-Anonymous types allow us to create an object that has read only properties
+-Anonymous object is an object that has no explict type
+-C# Compiler generates type name and is accessible only for the current block of code.
+-There are best for the "use and throw" types.
+-To create anonymous types , we must use new operator with an object initializer
+
+. In the below Example, we are creating anonymous types by using "new" keyword with the object initalizer
+
+var annoyInfo = new
+{
+	Fname = "Dipesh",
+	Lname = "Deula"
+};
+
+Console.WriteLine("Fname:" + annoyInfo.Lname);

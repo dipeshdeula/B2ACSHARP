@@ -1,0 +1,73 @@
+﻿Delegates
+
+- A Delegates is a pointer to a method.
+- But it is object-oriented, secured and type-safe than function pointer.
+- That means, a delegate holds the address of a method which can be called using that delegates
+- For static method, delegate encapsulates method only.
+- But for instance method, it encapsulates method and instance both.
+- There are three steps involved while working with delegates:
+	# Declare a delegate
+	# Set a target Method
+	# Invoke a delegate
+
+
+Types of Delegates
+1) SingleCast Delegates -> A single function or method is reffered as a Delegate
+2) MultiCast Delegates -> Refers to the delegation of multiple functions or methods
+
+
+//Delegate progrmMentor
+-> Delegate meaning from google : A person sent or authorized to represent others, in particular
+an elected representative sent to a conference.
+->Delegate is a type which holds a method's reference in an object.
+-> It is also called function pointer.
+-> Delegate is of reference type.
+-> Delegate signature should be as same as the method signature referencing by a delegate.
+-> Delegate can point to a parameterized method or non-parameterized method.
+-> Delegate has no implementation means no body with{}.
+-> we can use Invoke() method with delegates
+->Delegates are used to encapsulate methods. 
+->In the .net framework , a delegate points to one or more methods.
+once you instantiate the delegate, the corresponding methods invoke.
+-> Delegates are objects that contain references to methods that need to be
+invoked instead of containing the actual method names.
+-> Using Delegates, you can call any method, which is identified only at run-time.
+-> A delegate is like having a general method name that points to various method at different
+times and invoked the required method at run time.
+-> In C#, Invoking a delegate will execute the reference method at run-time.
+-> To associate a Delegate with a particular method, the method must have the same return type and parameter type
+as that of the delegate.
+
+#Types of Delegates:
+-> Multiple Delegates
+-> Single Cast Delegates
+-> Multi Cast Delegates
+
+# Multiple Delegates:
+	->In C#, a user can invoke mulitple delegates within a single program.
+	Depending on the delegate name or the type of parameters passed to the delegate,
+	, the appropriate delegate is invoked.
+
+# Sigle Cast Delgates:
+	-> SingleCast delegate point to single method at a time. In this the delegate
+	is assigned to a single method at a time. They are derived from System.Delegate class.
+
+# MultiCast Delegates:
+	-> When a delegate is wrapped with more than one method that is known as a multicast delegate.
+
+	In C#, delegates are multicast, which means that they can point to more than one funciton at a time.
+	They are derived from System.MulticastDelegate class.
+
+	We can use += and -= assignment operators to implement multi cast delegates.
+
+# Func
+-> Func is a built-in delegate type defined in the System namespace.
+-> Func is a generic delegate included in the System namespace.
+-> Func delegate can point to a method that takes zero or more input , one out parameter and returns a value.
+-> The last parameter is considered as an out parameter.
+
+# Action
+-> Action is a built-in delegate type defined in the System namespace.
+-> Action is a generic delegate included in the System namespace.
+-> Same as Func delgate except that the Action delegate doesn't return a value
+-> Can be used with a method that has a void return type.

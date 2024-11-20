@@ -1,0 +1,35 @@
+﻿Expression Tree
+
+-Expression Tree is nothing but expressions arranged in a tree-like data structure.
+-Each node in an expression tree is an expression.
+-Expression tree is an in-memory representation of a lamda expression.
+-It holds the actual elements of the query, not the result of the query.
+-The expression tree makes the structure of the lamda expression transparent and explicit.
+-You can interact with the data in expression tree just as you can with any other data structure.
+
+syntax:
+ Expression<T delegate> name = lamda expression;
+
+ It can be created by using the following two ways:
+	1. Using Expression Lamda
+	2. Using Expression Tree API
+
+Expression Tree Structure:
+
+The Simple structure of an Expression<T Delegate>has four properties as given below:
+	1. NodeType: It returns the type of the node.
+	2. Type: It returns the type of the expression.
+	3. Name: It returns the name of the expression.
+	4. Parameters: It returns the parameters of the expression.
+
+	//Expression Tree
+	Func<string,string,string> stringJoins = (str1,str2) => string.Concat(str1,str2);
+	Expression<Func<string,string,string>> stringJoinExpression = (str1,str2) => string.Concat(str1,str2);
+
+	var Func = stringJoinExpression.Compile();
+	var result = Func("Hello","World");
+	Console.WriteLine(result);
+
+	//or
+	result = stringJoinExpression.Compile()("Hello","World");
+	Console.WriteLine(result);

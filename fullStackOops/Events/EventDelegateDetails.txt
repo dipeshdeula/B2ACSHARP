@@ -1,0 +1,52 @@
+﻿Events
+
+- Events in C#, being a subset of delegates are defined by using ...delegates.
+- An event is an encapsulated delegate
+- To raise an event in C# you need a publisher,
+- And to receive and handle an event you need a subscriber or multiple subscriber.
+- These are usually implemented as publisher and subscriber classes.
+
+Syntax:
+	event delegate_name.event_name;
+
+
+Annonymous Method
+- As the name suggests , an anonymous method is method without a name.
+- Anonymous method can be defined using the delegate keyword.
+- They can be assigned to a variable of delegate type
+- Anonymous method can access variables defined in an outer function
+
+
+#Example
+
+public delegate void print(int value);
+
+static void Main(string[] args)
+{
+	Print print = delegate (int val)
+	{
+		Console.WriteLine("Inside Anonymous method. value"+val);
+
+	}
+	
+	print(500);
+}
+
+#Events
+-> Events are a communication between objects via a notification mechanism that is event
+provide notification to the client or consumer application when an object changes its state or it
+can be also defined as when something happens to the object even provide a mechanism to notify
+other objects about that events and delegate are tightly coupled concept because event handling 
+require delegate implementation to dispatch events.
+-
+
+#Publishing an Event
+  1. First need to declare a delegate , that is the contract between the publisher and the subscriber
+		public delegate void EmployeeSeparatedEventHandler(object sender, EventArgs args);
+
+  2. Define the event based on the delegate
+        public event EmployeeSeparatedEventHandler EmployeeSeparated;
+
+  3. Publish the event
+		EmployeeSeparated(this, EventArgs.Empty);
+		

@@ -1,0 +1,16 @@
+﻿Constructors
+
+- A constructor is a special method that is used to initialize an object of a class.
+- It is similar to a method that is invoked when an object of the class is created.
+- However, unlike methods, a constructor :
+	-has the same name as the class
+	-does not have a return type
+
+Types of Constructors
+
+- Default Constructor => A constructor that has no parameter is known as default constructor.
+- Parameterized Constructor => A constructor that has parameters is known as parameterized constructor.
+- Copy Constructor => A constructor that copies the values of another constructor is known as copy constructor.
+- Static Constructor => A constructor that is used to initialize static data members is known as static constructor.
+- Private Constructor => A constructor that is used to prevent the creation of objects is known as private constructor.
+

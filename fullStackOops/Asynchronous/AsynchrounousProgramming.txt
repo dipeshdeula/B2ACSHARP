@@ -1,0 +1,36 @@
+﻿Asynchronous Programming (ex: texting/chatting)
+
+- It is an efficinet apporach towards acitivities blocked or access is delayed
+- If an activity is blocked like this in a synchronous process.
+-then the complete application waits and it takes more time.
+- The application stops responding.
+- Using the asynchronous approach, the appliaction continue with other talk as well.
+
+Asynchronous Programming patterns
+
+There are 3 patterns for implementing asynchronous programming in .NET:
+ - Asynchronous Programming Model(APM)
+ - Event-Based Asychronous pattern(EAP)
+ -Task-Based Asynchrous  pattern(TAP)
+
+ -All of these patterns are used in .NET to provide asynchronous programming support,
+ -and Task-Based Asynchrous pattern(TAP) is the most recent and recommended pattern
+ for asynchronous programming in .NET application
+
+ Difference between Synchronous Vs Asynchoronous Programming
+
+ Sync						     Async
+ -Blocking call					-Non-blocking call
+ -Wait for the response			-Do not wait for the response
+ -Single thread					-Can be Multiple threads
+ -Less responsive				-More responsive
+ -More time consuming			-Less time consuming
+ -Less efficient					-More efficient
+ -Less scalable					-More scalable
+ -Less complex					-More complex
+ -Less error prone				-More error prone
+ -Limited to the capabilities of a - Can advantage of multiple cpu cores
+ single cpu.	
+ 
+ -Exceptions are raised immediately - Exceptions can be wrapped in a task and raised later
+ -Does not use tasks 			-Uses tasks to represent async unit of work

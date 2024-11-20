@@ -1,0 +1,7 @@
+﻿Method Overloading
+
+- It is a compile-time (or static or early-binding) polymorphism.
+- because which method to call is decided at compile time, early than the runtime.
+- It allows multiple methods in the same class with to have the same name but different parameters.
+- The appropriate method is selected at compile time based on the method signature used in the call. 
+- In C#, we can overload method, constructor, indexer, and operator.

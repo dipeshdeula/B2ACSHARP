@@ -1,0 +1,24 @@
+﻿Introduction to Generics
+
+Generics in C# allow you to define methods, classes, and interfaces
+with a placeholder for the type of data they store or use. This
+allows you to create more flexible and resuable code.
+
+Syntax of Generic Methods:
+
+A generic method is defined with type parameters,
+which are enclosed in angle brackets (<T>).
+The type parameter can be any valid type, and the method
+can use this type as a placeholder for actual data types.
+
+Syntax:
+	public void MethodName<T>(T parameter)
+	{
+		// method implementation
+	})
+
+Benefits of using Generics:
+- Type Safety: Generics provide compile-time type checking.
+- Code Reusability: Generic methods can work any data type.
+- Performance: Generics reduce the need for type conversion and boxing.
+

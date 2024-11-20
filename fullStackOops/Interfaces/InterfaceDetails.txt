@@ -1,0 +1,42 @@
+﻿Interface
+
+- An interface is similar to abstract class, but it is a 100% abstract class. 
+- It is used to achieve full abstraction and multiple inheritance in Java as well as C#.
+- However, unlike abstract classes, all methods of an interface are fully abstract (method without body)
+- We use the interface keyword to create an interface.
+
+# For Example:
+
+interface Rectangle
+{
+	//method without body
+
+	void CalculateArea();
+}
+
+Here,
+- Rectangle is the name of the interface.
+- We cannot use access modifiers inside an interface.
+- We cannot define the body of the method inside an interface.
+- All members of an interface are public by default.
+- An interface doesn't allow fields (variables) to be declared inside it.
+
+#some extra points
+
+- Interfaces specify what a class must do and not how. It is the blueprint of the class.
+- Interfaces can't have constructors because they can't be instantiated.
+- Interfaces can't have private, protected, or internal access modifiers.
+- All members of an interface are public by default.
+- A class can implement multiple interfaces.
+- An interface can inherit from another interface.
+- An interface can't inherit from a class.
+- Interface cannot contain fields because they represent a particular implemenation of data.
+- Multiple inheritance is possible with the help of interfaces but not with classes.
+
+Advantages of Interface
+- It is used to achieve full abstraction.
+- It supports multiple inheritance.
+- It is used to achieve loose coupling.
+- It is used to achieve dynamic method resolution.
+- To achieve component-based programming.
+- It adds a plug and play like architecture into applications.
