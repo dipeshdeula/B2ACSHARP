@@ -61,3 +61,9 @@ The finally block is executed:
 try block ----When exception occurs -- > catch block ----executes-->finally block
 	|																   |
 	|---------------------------executes------------------------------>|
+
+
+	catch(WebException e) when (ex.Status==WebExceptionStatus.TimeOut)
+	{
+		
+	}

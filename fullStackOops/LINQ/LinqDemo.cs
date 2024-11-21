@@ -2,7 +2,7 @@
 {
     public class LinqDemo
     {
-        public static void Main(string[] args)
+       /* public static void Main(string[] args)
         {
             // Linq query to array
             string[] names = { "Dipesh", "Prajjwal", "Sandesh", "Sunil" };
@@ -26,6 +26,6 @@
                 Console.WriteLine("{0}",number);
             }
             Console.WriteLine();
-        }
+        }*/
     }
 }
