@@ -26,9 +26,24 @@ namespace fullStackOops.Exception_Handling
             }
 */
 
-            int[] nums = { 1, 2, 3, 4, 5, 6, 7 };
-            Console.WriteLine("nums index at 7 , {0}", nums[7]);
-            
+          /*  int[] nums = { 1, 2, 3, 4, 5, 6, 7 };
+            Console.WriteLine("nums index at 7 , {0}", nums[7]);*/
+
+            Console.WriteLine("Enter the size of array:");
+            int num = Convert.ToInt32(Console.ReadLine());
+            int[] arr = new int[num];
+            Console.WriteLine("Enter the number:");
+            for (int i = 0; i < num; i++)
+            {
+                arr[i] = Convert.ToInt32(Console.ReadLine());
+            }
+
+            for(int i = 0; i < num; i++)
+            {
+                Console.WriteLine(arr[i]);
+            }
+
+
         }
     }
 }
