@@ -32,10 +32,17 @@ namespace fullStackOops.Exception_Handling
             Console.WriteLine("Enter the size of array:");
             int num = Convert.ToInt32(Console.ReadLine());
             int[] arr = new int[num];
+            int num1 = 0;
             Console.WriteLine("Enter the number:");
             for (int i = 0; i < num; i++)
             {
                 arr[i] = Convert.ToInt32(Console.ReadLine());
+                if(num1 < arr[i])
+                {
+                    Console.WriteLine("Exception raised");
+                    throw new Exception("Number is greater than 20");
+                }
+
             }
 
             for(int i = 0; i < num; i++)
