@@ -50,7 +50,7 @@ namespace fullStackOops.Exception_Handling
                 Console.WriteLine(arr[i]);
             }*/
 
-            Console.WriteLine("Please enter a number to divide 100:");
+           /* Console.WriteLine("Please enter a number to divide 100:");
 
             try
             {
@@ -80,7 +80,7 @@ namespace fullStackOops.Exception_Handling
             catch (Exception ex)
             {
                 Console.WriteLine("Error occured! please try again");
-            }
+            }*/
         }
     }
 }
