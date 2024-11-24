@@ -22,7 +22,7 @@ namespace fullStackOops.Events
         {
             get => age;
 
-            set
+           /* set
             {
 
                 if (age == value) return; // Exit if nothing has changed
@@ -37,7 +37,7 @@ namespace fullStackOops.Events
 
 
                 
-            }
+            }*/
         }
 
         // Declare the event using EventHandler<T>
